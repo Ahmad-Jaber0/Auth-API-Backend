@@ -1,14 +1,14 @@
 POST http://127.0.0.1:8000/signup/ 
 Content-Type: application/json
 
-{"username": "aws","password": "123","email": "aws@mail.com","first_name": "aws","last_name": "nassar"}
+{"username": "Ahmad","password": "123","email": "Ahmad@mail.com","first_name": "ahamd","last_name": "jana"}
 
 ###
 
 POST http://127.0.0.1:8000/login/ 
 Content-Type: application/json
 
-{ "username": "aws", "password": "123" }
+{ "username": "Ahmad", "password": "123" }
 
 ###
 
@@ -21,7 +21,7 @@ Authorization: token 21e75df954c7032430ed2b594bd85dc0ac8b0986
 
 POST http://127.0.0.1:8000/logout/
 Content-Type: application/json
-Authorization: Token ff2a8d26d61c560c339d10f113e9efc4eca1d4a1
+Authorization: Token 949332b44dd671cb407db4ffb2d032594242ccc4
 
 
 
@@ -30,22 +30,22 @@ Authorization: Token ff2a8d26d61c560c339d10f113e9efc4eca1d4a1
 
 GET http://127.0.0.1:8000/user_dashboard/
 Content-Type: application/json
-Authorization: Token ff2a8d26d61c560c339d10f113e9efc4eca1d4a1
+Authorization: Token 949332b44dd671cb407db4ffb2d032594242ccc4
 
 
 ###
 
 POST http://127.0.0.1:8000/change_password/
 Content-Type: application/json
-Authorization: Token ff2a8d26d61c560c339d10f113e9efc4eca1d4a1
+Authorization: Token 949332b44dd671cb407db4ffb2d032594242ccc4
 
 {
     "old_password": "123",
-    "new_password": "123"
+    "new_password": "1234"
 }
 
 ###
 
 GET http://127.0.0.1:8000/view_profile/
 Content-Type: application/json
-Authorization: Token ff2a8d26d61c560c339d10f113e9efc4eca1d4a1
+Authorization: Token 949332b44dd671cb407db4ffb2d032594242ccc4
